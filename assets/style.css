@@ -1,0 +1,133 @@
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+em {
+    font-style: italic;
+}
+nav {
+    background-color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+.panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+.column {
+    float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subtitle {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.button {
+    padding: 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: antiquewhite;
+    text-decoration: none;
+}
+
+.button:active {
+    border: 1px inset buttonborder;
+}
+
+nav {
+    background-color: white;
+    padding: 0 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 16px 0;
+}
+
+nav ul li a {
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    background-color: antiquewhite;
+}
+
+
+.bio-section > * + * {
+    padding-top: 4px;
+}
+
+.form-field {
+    padding: 6px 0;
+}
+
+.form-field > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+.form-field > input[type=text] {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-field > input[type=submit] {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: antiquewhite;
+}
+
+.form-field > input[type=submit]:active {
+    border: 1px inset buttonborder;
+}

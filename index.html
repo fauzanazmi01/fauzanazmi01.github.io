@@ -1,10 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fauzan Azmi Dwicahyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <nav>
+        <ul>
+            <li><a href="challenge-2.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="panel row">
+            <div class="column" style="width: 125px;">
+                <img src="images/user-svgrepo-com.svg" alt="" style="width: 110px;">
+            </div>
+            <div class="column" style="padding-left: 12px; width: 35%;">
+                <h1 style="font-size: 1.5em; padding-bottom: 4px; margin: 0;">Fauzan Azmi Dwicahyo</h1>
+                <p style="margin: 0; padding-bottom: 12px; margin: 0;" >Front end designer</p>
+                <div style="margin-top: 8px">
+                    <a href="https://google.com" class="button">Kontak</a>
+                    <a href="https://google.com" class="button">Edit Resume</a>
+                </div>
+            </div>
+            <div class="column bio-section">
+                <div>
+                    <span class="subtitle">Availability</span>
+                    <span>Full time</span>
+                </div>
+                <div>
+                    <span class="subtitle">Usia</span>
+                    <span>17</span>
+                </div>
+                <div>
+                    <span class="subtitle">Lokasi</span>
+                    <span>Jakarta, Indonesia</span>
+                </div>
+                <div>
+                    <span class="subtitle">Pengalaman</span>
+                    <span>2</span>
+                </div>
+                <div>
+                    <span class="subtitle">Email</span>
+                    <span>developer@gmail.com</span>
+                </div>
+            </div>
+        </section>
+        <form action="" class="panel">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-field">
+                <label for="role">Role</label>
+                <input type="text" id="role" name="role">
+            </div>
+            <div class="form-field">
+                <label for="availability">Availability</label>
+                <input type="text" id="availability" name="availability">
+            </div>
+            <div class="form-field">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age">
+            </div>
+            <div class="form-field">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" id="lokasi" name="lokasi">
+            </div>
+            <div class="form-field">
+                <label for="years_experience">Years Experience</label>
+                <input type="text" id="years_experience" name="years_experience">
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-field" style="padding-top: 12px;">
+                <input class="button" type="submit" value="Submit"></input>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
